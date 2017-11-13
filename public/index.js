@@ -6,9 +6,7 @@ $(document).ready(function() {
   });
 
   $('.nav-item:not(.brand)').click(function() {
-    if (!$(this).hasClass('brand')) {
-      $(this).addClass('active');
-    }
+    $(this).addClass('active');
     $(this).siblings().removeClass('active');
   });
 
@@ -18,9 +16,14 @@ $(document).ready(function() {
 
   $('.nav-item').click(function() {
     const { link } = $(this).data();
-    const offset = $(`.${link}`).offset();
-    $('body, html').animate({
-      scrollTop: offset.top,
-    }, 'slow');
+    if (link !== 'dropdown') {
+      const offset = $(`.${link}`).offset();
+      $('body, html').animate({
+        scrollTop: offset.top,
+      }, 'slow');
+      $('.drop-down').hide();
+    } else {
+      $('.drop-down').toggle();
+    }
   });
 });

@@ -5,6 +5,7 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <link type="text/css" rel="stylesheet" href="styles/index.css"/>
+    <script src="https://use.fontawesome.com/eb304ad41b.js"></script>
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
     <script async src="index.js"></script>
   </head>
@@ -15,13 +16,25 @@
         <div class="nav-group">
           <span class="nav-item" data-link="about">ABOUT</span>
           <span class="nav-item" data-link="work">WORK</span>
-          <span class="nav-item" data-link="xxxx">XXXX</span>
+          <span class="nav-item" data-link="other">OTHER</span>
+        </div>
+        <div class="nav-dropdown">
+          <span class="nav-item" data-link="dropdown">
+            <i class="fa fa-bars" aria-hidden="true"></i>
+          </span>
+          <div class="drop-down">
+            <ul>
+              <li class="nav-item" data-link="about">ABOUT</li>
+              <li class="nav-item" data-link="work">WORK</li>
+              <li class="nav-item" data-link="other">OTHER</li>
+            </ul>
+          </div>
         </div>
       </div>
       <div class="main-block landing"></div>
       <div class="main-block about"></div>
       <div class="main-block work"></div>
-      <div class="main-block xxxx"></div>
+      <div class="main-block other"></div>
     </div>
   </body>
 </html>
