@@ -4,8 +4,24 @@
     <title>Zack Snyder</title>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link type="text/css" rel="stylesheet" href="styles/index.css"/>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+    <script async src="index.js"></script>
   </head>
   <body>
-    <div class="app">Hello, World</div>
+    <div id="app">
+      <div id="nav">
+        <span class="nav-item brand" data-link="landing">ZS</span>
+        <div class="nav-group">
+          <span class="nav-item" data-link="about">ABOUT</span>
+          <span class="nav-item" data-link="work">WORK</span>
+          <span class="nav-item" data-link="xxxx">XXXX</span>
+        </div>
+      </div>
+      <div class="main-block landing"></div>
+      <div class="main-block about"></div>
+      <div class="main-block work"></div>
+      <div class="main-block xxxx"></div>
+    </div>
   </body>
 </html>
